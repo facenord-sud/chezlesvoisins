@@ -1,0 +1,140 @@
+html
+{
+    height: 100%;
+    overflow: -moz-scrollbars-vertical;
+}
+
+* {outline:none}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+    font: 11px/11px Helvetica, Arial, sans-serif;
+}
+
+#flyingDutchman {
+    padding: 30px 30px 11px 20px;
+    margin-top: 14px;
+    width: 450px;
+    height: 520px;
+}
+.startpage #flyingDutchman {
+    margin-top: -408px;
+    margin-left: -585px;
+    width: 500px;
+    background-image: image-path("background2.png") !important;
+}
+
+#flyingDutchman hr {
+    margin-top: 10px;
+    color: #888;
+    background-color: #888;
+}
+
+h1
+{
+    margin: 0;
+    padding: 0;
+
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2
+{
+    margin: 0;
+    padding: 0;
+
+    font-size: 11px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+h3
+{ margin: 0;
+    padding: 0;
+
+    font-size: 11px;
+    color: transparent;
+    font-weight: normal;
+    text-transform: uppercase;}
+hr
+{
+    height: 1px;
+
+    color: #b8babc;
+
+    border: 0;
+    background: #b8babc;
+}
+
+#head
+{
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+
+    margin: 0;
+    padding: 23px 0 0 650px;
+    height: 23px;
+
+}
+
+#hintergrund
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+table.scroll {
+    /* width: 100%; */ /* Optional */
+    /* border-collapse: collapse; */
+    border-spacing: 0;
+    border: 0px solid black;
+}
+
+table.scroll tbody,
+table.scroll thead { display: block;
+
+    width: 510px;
+}
+
+table tbody tr td{
+  min-width: 510px;
+}
+
+thead tr th {
+    height: 30px;
+    line-height: 30px;
+    /* text-align: left; */
+}
+
+table.scroll tbody {
+    height: 490px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+tbody { border-top: 0px solid black; }
+
+tbody td, thead th {
+    /* width: 20%; */ /* Optional */
+    border-right: 0px solid black;
+    /* white-space: nowrap; */
+}
+
+tbody td:last-child, thead th:last-child {
+    border-right: none;
+}

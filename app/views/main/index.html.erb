@@ -1,0 +1,38 @@
+<div id="head" >
+  <%= image_tag 'banner_light250x550.png', width: '280', height: '470'%>
+
+  <div id="flyingDutchman" style="background: url(<%= image_url 'background.png' %>);">
+
+    <h1>&#201;VENEMENTS</h1>
+
+    <br>
+
+    <table class="scroll">
+      <tbody>
+      <% @events.each do |event|%>
+          <tr>
+            <td>
+              <hr />
+              <h1><%= date_and_title(event)%></h1>
+              <h2><%= event.description %></h2>
+              <h2><%= event.artist %></h2>
+            </td>
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
+
+  </div>
+
+</div>
+<div id="hintergrund" >
+  <%= image_tag 'background_house.jpg', id: 'pic', style: 'position. fixed' %>
+  <script language="javascript" type="text/javascript">
+      <!--
+      global_on_startpage = true;
+      global_int_arr_imagesize = [1247, 780];
+      window.onresize = resizePic;
+      resizePic();
+      // -->
+  </script>
+</div>
